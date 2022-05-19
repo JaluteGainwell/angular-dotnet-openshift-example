@@ -19,7 +19,7 @@ NOTE: by default, this image will be **private**.
 4.  For OpenShift to acces the image, you will need to create a Github personal access token .  
     a. Go to your GitHub Profile settings, and select **Developer Settings**
     b. Select Personal Access Token and press **Generate New Access Token**
-    c. Give description name like ""
+    c. Give description name like "For Package Management"
     d. Give the token **Write:packages** and **Delete:packages** privileges
     e. Click **Generate Token**
         NOTE: will generate a key, you will need this in a later step in Openshift.
