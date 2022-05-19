@@ -1,4 +1,4 @@
-# get redhat openshift dotnet core 5.0 build
+﻿# get redhat openshift dotnet core 5.0 build
 FROM registry.access.redhat.com/ubi8/dotnet-50 AS build
 WORKDIR /build
 
@@ -15,7 +15,7 @@ WORKDIR /build
 RUN dotnet publish -c release -o published --no-cache
 
 # final stage/image
-FROM registry.access.redhat.com/ubi8/dotnet-50 AS runImg
+FROM registry.access.redhat.com/ubi8/dotnet-50
 WORKDIR /app
 EXPOSE 5000
 ENV ASPNETCORE_URLS=http://+:5000
